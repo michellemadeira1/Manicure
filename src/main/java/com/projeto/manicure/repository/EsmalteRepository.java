@@ -10,5 +10,6 @@ import com.projeto.manicure.entity.Esmalte;
 @Repository
 public interface EsmalteRepository extends JpaRepository<Esmalte, Long> {
  
-	List<Esmalte> findAllByOrderByNumeroAsc();
+	List<Esmalte> findAllByOrderByNumero();
+	List<Esmalte> findAllByNomeIgnoreCase(String nome);
 }
