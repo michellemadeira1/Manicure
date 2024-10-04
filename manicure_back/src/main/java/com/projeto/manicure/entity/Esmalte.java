@@ -19,12 +19,13 @@ public class Esmalte {
 	    private String cor;
 	    private String foto;
 	    private int quantidade;
+	    private String descricao;
 	    
 	    
 	    
 	    public Esmalte() {}
 	    
-		public Esmalte(Long id, String nome, String marca, int numero, String cor, String foto, int quantidade) {
+		public Esmalte(Long id, String nome, String marca, int numero, String cor, String foto, int quantidade, String descricao) {
 			super();
 			this.id = id;
 			this.nome = nome;
@@ -33,9 +34,12 @@ public class Esmalte {
 			this.cor = cor;
 			this.foto = foto;
 			this.quantidade = quantidade;
+			this.descricao = descricao;
 		}
 
 
+
+		
 
 		public Long getId() {
 			return id;
@@ -117,6 +121,14 @@ public class Esmalte {
 
 		public void setQuantidade(int quantidade) {
 			this.quantidade = quantidade;
+		}
+
+		public String getDescricao() {
+			return descricao;
+		}
+
+		public void setDescricao(String descricao) {
+			this.descricao = descricao;
 		}
 	    
 	    
