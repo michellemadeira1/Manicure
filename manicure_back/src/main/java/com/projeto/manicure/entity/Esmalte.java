@@ -1,5 +1,9 @@
 package com.projeto.manicure.entity;
 
+
+
+import java.util.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +24,7 @@ public class Esmalte {
 	    private String foto;
 	    private int quantidade;
 	    private String descricao;
+	    private Date datavalidade;
 	    
 	    
 	    
